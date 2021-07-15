@@ -1,0 +1,19 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /user
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  # spring boot集成mybatis的方式打印sql
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  datasource:
+    url: jdbc:mysql://10.10.0.48:3306/internship?useUnicode=true&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true&useSSL=false
+    username: root
+    password: ody,123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
